@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="first-name">Enter Your Name: <input id="name" placeholder="Enter your name" name="first-name" type="text" required /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" placeholder="Enter your email" name="email" type="email" required /></label>
+        <label id="number-label" for="number-label">Your age (optional): <input id="number" placeholder="Password123"name="new-password" type="number" min="1" max="3"  /></label>
+      </fieldset>
+      <fieldset>
+        
+        
+        <h2> Would you recommend FreeCodeCamp?</h2>
+        <label for="definitely"><input checked value="definitely" id="definitely" type="radio" name="account-type" class="inline" /> Definitely</label>
+        <label for="maybe"><input value="maybe" id="maybe" type="radio" name="account-type" class="inline" /> Maybe</label>
+        <label for="No"><input value="No" id="No" type="radio" name="account-type" class="inline" /> No</label>
+        
+      </fieldset>
+      <fieldset>
+
+
+        
+        
+
+
+
+
+        <label for="dropdown">What is your current role?
+          <select id="dropdown" name="dropdown">
+            <option disabled selected value value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job </option>
+            <option value="3">Learner</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+
+
+
+
+
+
+        
+        <legend>What would you like to see improved?</legend>
+            <input 
+            class="checkbox"
+            id="Videos" type="checkbox"  name="improve" value="Videos"> <label for="loving" style="float:left"  class="item">Videos</label>
+           
+            <input id="Wiki" type="checkbox" name="improve" class="checkbox" value="Wiki"> <label for="Wiki" class="item">Wiki</label>
+            
+            <input id="Forum" type="checkbox" name="improve" class="checkbox" value="Forum"> <label for="Forum" class="item">Forum</label>
+
+
+            
+
+
+       
+       
+       
+        <label for="bio">Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Your comments here"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit"/> 
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #14939f;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #121010;
+}
+
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+
+.checkbox {
+  min-height: 1rem;
+  vertical-align: middle;
+}
+
+
+.item{
+  margin: 1px;
+  vertical-align: middle;
+}
